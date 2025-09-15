@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Petite Vendée - Restaurant Gastronomique à Petit-Lancy | Cuisine Française Raffinée</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="La Petite Vendée - Restaurant gastronomique à Petit-Lancy. Découvrez notre cuisine française raffinée, excellent choix de vins et menu dégustation. Réservation 022 792 14 15">
+    <meta name="keywords" content="restaurant gastronomique Petit-Lancy, cuisine française Genève, menu dégustation, restaurant français Suisse, La Petite Vendée, fruits de mer, côte de bœuf">
+    <meta name="author" content="La Petite Vendée">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="La Petite Vendée - Restaurant Gastronomique Petit-Lancy">
+    <meta property="og:description" content="L'Art de la Gastronomie Française à Petit-Lancy. Menu dégustation, excellent choix de vins, terrasse.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://www.lapetitevendee.ch">
+    <meta property="og:image" content="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "La Petite Vendée",
+      "image": "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chem. de la Vendée 20",
+        "addressLocality": "Petit-Lancy",
+        "postalCode": "1213",
+        "addressCountry": "CH"
+      },
+      "telephone": "+41227921415",
+      "url": "https://www.lapetitevendee.ch",
+      "servesCuisine": "French",
+      "priceRange": "€€€",
+      "openingHours": [
+        "Mo-Sa 11:30-14:00",
+        "Mo-Sa 18:30-23:00",
+        "Su 11:00-14:00",
+        "Su 18:30-23:00"
+      ],
+      "hasMenu": true,
+      "acceptsReservations": true
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2>La Petite Vendée</h2>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link">Notre Carte</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#reservation" class="nav__link">Réservation</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Notre Histoire</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <div class="nav__phone">
+                    <i class="fas fa-phone"></i>
+                    <span>022 792 14 15</span>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__bg">
+                <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg" alt="Intérieur élégant du restaurant La Petite Vendée" class="hero__img">
+            </div>
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">La Petite Vendée</h1>
+                    <p class="hero__subtitle">L'Art de la Gastronomie Française à Petit-Lancy</p>
+                    <p class="hero__description">Découvrez l'excellence culinaire française dans un cadre raffiné. Menu dégustation, excellent choix de vins et service impeccable.</p>
+                    <a href="#reservation" class="btn btn--primary hero__cta">Réserver une table</a>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <a href="#menu" class="hero__scroll-link">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu section" id="menu">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Notre Carte</h2>
+                    <p class="section__description">Une cuisine française raffinée avec des ingrédients de première qualité</p>
+                </div>
+
+                <div class="menu__tabs">
+                    <button class="menu__tab active" data-target="dejeuner">Menu Déjeuner</button>
+                    <button class="menu__tab" data-target="diner">Menu Dîner</button>
+                    <button class="menu__tab" data-target="specialites">Spécialités</button>
+                    <button class="menu__tab" data-target="vins">Carte des Vins</button>
+                </div>
+
+                <!-- Menu Déjeuner -->
+                <div class="menu__content active" id="dejeuner">
+                    <div class="menu__time">
+                        <i class="fas fa-clock"></i>
+                        <span>Servi de 11:30 à 14:00</span>
+                    </div>
+                    
+                    <div class="menu__grid">
+                        <div class="menu__category">
+                            <h3 class="menu__category-title">Entrées</h3>
+                            <div class="menu__items">
+                                <div class="menu__item">
+                                    <div class="menu__item-header">
+                                        <h4>Foie Gras de Canard</h4>
+                                        <span class="menu__price">28 CHF</span>
+                                    </div>
+                                    <p>Poêlé aux figues fraîches, pain brioché toasté</p>
+                                </div>
+                                <div class="menu__item">
+                                    <div class="menu__item-header">
+                                        <h4>Tartare de Saint-Jacques</h4>
+                                        <span class="menu__price">24 CHF</span>
+                                    </div>
+                                    <p>Caviar d'Osciètre, crème d'avocat, citron vert</p>
+                                </div>
+                                <div class="menu__item">
+                                    <div class="menu__item-header">
+                                        <h4>Velouté de Châtaignes</h4>
+                                        <span class="menu__price">18 CHF</span>
+                                    </div>
+                                    <p>Truffe noire, croutons dorés, huile de noisette</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__category">
+                            <h3 class="menu__category-title">Plats</h3>
+                            <div class="menu__items">
+                                <div class="menu__item">
+                                    <div class="menu__item-header">
+                                        <h4>Côte de Bœuf Wagyu</h4>
+                                        <span class="menu__price">48 CHF</span>
+                                    </div>
+                                    <p>Gratin dauphinois, légumes de saison, jus au vin rouge</p>
+                                </div>
+                                <div class="menu__item">
+                                    <div class="menu__item-header">
+                                        <h4>Turbot de Ligne</h4>
+                                        <span class="menu__price">42 CHF</span>
+                                    </div>
+                                    <p>Risotto aux asperges, sauce beurre blanc aux herbes</p>
+                                </div>
+                                <div class="menu__item">
+                                    <div class="menu__item-header">
+                                        <h4>Agneau des Alpes</h4>
+                                        <span class="menu__price">38 CHF</span>
+                                    </div>
+                                    <p>Ratatouille confite, jus d'ail et romarin</p>
+                                </div>
+                                <div class="menu__item">
+                                    <div class="menu__item-header">
+                                        <h4>Ravioli Maison Épinards</h4>
+                                        <span class="menu__price">32 CHF</span>
+                                    </div>
+                                    <p>Ricotta, sauce tomate basilic, parmesan 24 mois</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__category">
+                            <h3 class="menu__category-title">Desserts</h3>
+                            <div class="menu__items">
+                                <div class="menu__item">
+                                    <div class="menu__item-header">
+                                        <h4>Tarte Fine aux Pommes</h4>
+                                        <span class="menu__price">18 CHF</span>
+                                    </div>
+                                    <p>Glace vanille bourbon, caramel au beurre salé</p>
+                                </div>
+                                <div class="menu__item">
+                                    <div class="menu__item-header">
+                                        <h4>Soufflé au Grand Marnier</h4>
+                                        <span class="menu__price">16 CHF</span>
+                                    </div>
+                                    <p>Sauce anglaise, biscuit à la cuillère</p>
+                                </div>
+                                <div class="menu__item">
+                                    <div class="menu__item-header">
+                                        <h4>Sélection de Fromages</h4>
+                                        <span class="menu__price">14 CHF</span>
+                                    </div>
+                                    <p>Comté, Roquefort, Chèvre cendré, confiture de figues</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Dîner -->
+                <div class="menu__content" id="diner">
+                    <div class="menu__time">
+                        <i class="fas fa-moon"></i>
+                        <span>Servi de 18:30 à 23:00</span>
+                    </div>
+                    
+                    <div class="menu__tasting">
+                        <div class="menu__tasting-card">
+                            <h3>Menu Dégustation 3 Services</h3>
+                            <div class="menu__price-large">78 CHF</div>
+                            <p>Entrée • Plat • Dessert</p>
+                            <p class="menu__wine-note">Accord mets-vins disponible (+35 CHF)</p>
+                        </div>
+                        
+                        <div class="menu__tasting-card featured">
+                            <h3>Menu Dégustation 5 Services</h3>
+                            <div class="menu__price-large">98 CHF</div>
+                            <p>Amuse-bouche • Entrée • Poisson • Viande • Dessert</p>
+                            <p class="menu__wine-note">Accord mets-vins disponible (+55 CHF)</p>
+                            <span class="menu__badge">Recommandé</span>
+                        </div>
+                    </div>
+
+                    <div class="menu__child">
+                        <div class="menu__child-card">
+                            <h3>Menu Enfant</h3>
+                            <div class="menu__price-medium">22 CHF</div>
+                            <p>Nuggets de poulet fermier, purée maison, légumes</p>
+                            <p>ou Pâtes à la sauce tomate, parmesan</p>
+                            <p>Dessert: glace ou fruit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spécialités -->
+                <div class="menu__content" id="specialites">
+                    <div class="menu__specialties">
+                        <div class="specialty__card">
+                            <img src="https://images.pexels.com/photos/725991/pexels-photo-725991.jpeg" alt="Plateau de fruits de mer" class="specialty__image">
+                            <div class="specialty__content">
+                                <h3>Plateau de Fruits de Mer</h3>
+                                <p>Huîtres Belon, langoustines, tourteau, moules, bulots, crevettes roses</p>
+                                <span class="specialty__price">65 CHF / personne</span>
+                                <p class="specialty__note">Sur commande - Minimum 2 personnes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="specialty__card">
+                            <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg" alt="Côte de bœuf" class="specialty__image">
+                            <div class="specialty__content">
+                                <h3>Côte de Bœuf pour Deux</h3>
+                                <p>Race Angus, maturation 21 jours, gratin dauphinois, légumes grillés</p>
+                                <span class="specialty__price">95 CHF / 2 personnes</span>
+                                <p class="specialty__note">Cuisson à votre convenance</p>
+                            </div>
+                        </div>
+                        
+                        <div class="specialty__card">
+                            <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg" alt="Tarte aux pommes" class="specialty__image">
+                            <div class="specialty__content">
+                                <h3>Tarte Fine aux Pommes</h3>
+                                <p>Notre dessert signature - Pommes Granny Smith, pâte feuilletée, glace vanille</p>
+                                <span class="specialty__price">18 CHF</span>
+                                <p class="specialty__note">Préparation 15 minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte des Vins -->
+                <div class="menu__content" id="vins">
+                    <div class="wine__intro">
+                        <h3>Excellent Choix de Vins</h3>
+                        <p>Notre sommelier a sélectionné plus de 150 références de vins français et suisses pour accompagner parfaitement votre repas.</p>
+                    </div>
+                    
+                    <div class="wine__categories">
+                        <div class="wine__category">
+                            <h4>Champagnes & Effervescents</h4>
+                            <div class="wine__item">
+                                <span class="wine__name">Dom Pérignon 2012</span>
+                                <span class="wine__price">180 CHF</span>
+                            </div>
+                            <div class="wine__item">
+                                <span class="wine__name">Krug Grande Cuvée</span>
+                                <span class="wine__price">145 CHF</span>
+                            </div>
+                            <div class="wine__item">
+                                <span class="wine__name">Champagne Bollinger</span>
+                                <span class="wine__price">85 CHF</span>
+                            </div>
+                        </div>
+                        
+                        <div class="wine__category">
+                            <h4>Vins Rouges</h4>
+                            <div class="wine__item">
+                                <span class="wine__name">Châteauneuf-du-Pape 2018</span>
+                                <span class="wine__price">75 CHF</span>
+                            </div>
+                            <div class="wine__item">
+                                <span class="wine__name">Côtes du Rhône Villages</span>
+                                <span class="wine__price">45 CHF</span>
+                            </div>
+                            <div class="wine__item">
+                                <span class="wine__name">Bordeaux Saint-Émilion</span>
+                                <span class="wine__price">55 CHF</span>
+                            </div>
+                        </div>
+                        
+                        <div class="wine__category">
+                            <h4>Vins Blancs</h4>
+                            <div class="wine__item">
+                                <span class="wine__name">Chablis Premier Cru 2020</span>
+                                <span class="wine__price">68 CHF</span>
+                            </div>
+                            <div class="wine__item">
+                                <span class="wine__name">Sancerre Loire Valley</span>
+                                <span class="wine__price">52 CHF</span>
+                            </div>
+                            <div class="wine__item">
+                                <span class="wine__name">Chasselas Vaudois</span>
+                                <span class="wine__price">38 CHF</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="wine__note">Demandez conseil à notre sommelier pour l'accord parfait</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section class="reservation section" id="reservation">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Réservation</h2>
+                    <p class="section__description">Réservation recommandée pour déjeuner et dîner</p>
+                </div>
+
+                <div class="reservation__content">
+                    <div class="reservation__info">
+                        <div class="reservation__card">
+                            <i class="fas fa-phone-alt"></i>
+                            <h3>Réservation Téléphonique</h3>
+                            <p class="reservation__phone">022 792 14 15</p>
+                            <p>Service de réservation disponible tous les jours</p>
+                        </div>
+                        
+                        <div class="reservation__hours">
+                            <h3>Horaires d'Ouverture</h3>
+                            <div class="hours__grid">
+                                <div class="hours__item">
+                                    <span class="hours__day">Lundi - Samedi</span>
+                                    <span class="hours__time">11:30-14:00 & 18:30-23:00</span>
+                                </div>
+                                <div class="hours__item">
+                                    <span class="hours__day">Dimanche</span>
+                                    <span class="hours__time">11:00-14:00 & 18:30-23:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="reservation__form" id="reservation-form">
+                        <h3>Réservation en Ligne</h3>
+                        
+                        <div class="form__grid">
+                            <div class="form__group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="guests">Nombre de personnes</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Sélectionner</option>
+                                    <option value="1">1 personne</option>
+                                    <option value="2">2 personnes</option>
+                                    <option value="3">3 personnes</option>
+                                    <option value="4">4 personnes</option>
+                                    <option value="5">5 personnes</option>
+                                    <option value="6">6 personnes</option>
+                                    <option value="7">7 personnes</option>
+                                    <option value="8">8+ personnes</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="time">Heure</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Sélectionner</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form__group form__group--full">
+                            <label for="occasion">Occasion spéciale (optionnel)</label>
+                            <select id="occasion" name="occasion">
+                                <option value="">Aucune</option>
+                                <option value="anniversaire">Anniversaire</option>
+                                <option value="anniversaire-mariage">Anniversaire de mariage</option>
+                                <option value="business">Repas d'affaires</option>
+                                <option value="demande-mariage">Demande en mariage</option>
+                                <option value="celebration">Célébration</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__group form__group--full">
+                            <label for="requests">Demandes particulières</label>
+                            <textarea id="requests" name="requests" rows="4" placeholder="Allergies alimentaires, préférences de table, etc."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">Confirmer la Réservation</button>
+                        
+                        <p class="form__note">
+                            <i class="fas fa-info-circle"></i>
+                            Vous recevrez une confirmation par email dans les plus brefs délais.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nos Services</h2>
+                    <p class="section__description">Une expérience gastronomique complète dans un cadre exceptionnel</p>
+                </div>
+
+                <div class="services__grid">
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Terrasse & Toit-Terrasse</h3>
+                        <p>Profitez de notre magnifique terrasse avec vue panoramique pour vos repas en plein air</p>
+                    </div>
+                    
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-wine-glass"></i>
+                        </div>
+                        <h3>Excellent Choix de Vins</h3>
+                        <p>Plus de 150 références soigneusement sélectionnées par notre sommelier expert</p>
+                    </div>
+                    
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Parking Facile</h3>
+                        <p>Parking couvert payant et parking gratuit dans la rue. Stationnement facilité</p>
+                    </div>
+                    
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Accueil Familles</h3>
+                        <p>Chaises hautes disponibles, menu enfant adapté, convient parfaitement aux enfants</p>
+                    </div>
+                    
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-wheelchair"></i>
+                        </div>
+                        <h3>Accessibilité Complète</h3>
+                        <p>Entrée, parking, places assises et toilettes entièrement accessibles aux personnes à mobilité réduite</p>
+                    </div>
+                    
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-takeout-box"></i>
+                        </div>
+                        <h3>Services Traiteur</h3>
+                        <p>Livraison, vente à emporter, et service traiteur pour vos événements privés</p>
+                    </div>
+                </div>
+
+                <div class="services__amenities">
+                    <h3>Commodités Supplémentaires</h3>
+                    <div class="amenities__grid">
+                        <div class="amenity__item">
+                            <i class="fas fa-wifi"></i>
+                            <span>Wi-Fi Gratuit</span>
+                        </div>
+                        <div class="amenity__item">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Cartes de Crédit</span>
+                        </div>
+                        <div class="amenity__item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Paiement Mobile NFC</span>
+                        </div>
+                        <div class="amenity__item">
+                            <i class="fas fa-cocktail"></i>
+                            <span>Bar sur Place</span>
+                        </div>
+                        <div class="amenity__item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Options Végétariennes</span>
+                        </div>
+                        <div class="amenity__item">
+                            <i class="fas fa-seedling"></i>
+                            <span>Sans Gluten</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <div class="section__header">
+                            <h2 class="section__title">Notre Histoire</h2>
+                            <p class="section__description">La passion de la gastronomie française depuis 1998</p>
+                        </div>
+                        
+                        <div class="about__story">
+                            <p>Nichée au cœur de Petit-Lancy, La Petite Vendée perpétue depuis plus de 25 ans l'art de la gastronomie française authentique. Notre restaurant familial s'est imposé comme une référence incontournable pour les amateurs de cuisine raffinée dans la région genevoise.</p>
+                            
+                            <p>Sous la direction du Chef Pierre Dubois, formé dans les plus grandes maisons françaises, notre brigade culinaire sublime les produits d'exception pour vous offrir une expérience gastronomique mémorable. Chaque plat raconte une histoire, celle de notre terroir et de notre savoir-faire.</p>
+                            
+                            <p>Notre philosophie s'articule autour de trois piliers : l'excellence des produits, le respect des traditions culinaires françaises et l'innovation créative. Cette approche nous permet de proposer une cuisine authentique tout en gardant un regard tourné vers la modernité.</p>
+                        </div>
+                        
+                        <div class="about__values">
+                            <div class="value__item">
+                                <i class="fas fa-medal"></i>
+                                <h4>Excellence Culinaire</h4>
+                                <p>Produits de première qualité et techniques traditionnelles</p>
+                            </div>
+                            <div class="value__item">
+                                <i class="fas fa-heart"></i>
+                                <h4>Service Personnalisé</h4>
+                                <p>Accueil chaleureux et attention aux détails</p>
+                            </div>
+                            <div class="value__item">
+                                <i class="fas fa-star"></i>
+                                <h4>Cadre Exceptionnel</h4>
+                                <p>Ambiance raffinée et terrasse avec vue panoramique</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__images">
+                        <div class="about__image-main">
+                            <img src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg" alt="Chef Pierre Dubois en cuisine" class="about__img">
+                        </div>
+                        <div class="about__image-secondary">
+                            <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg" alt="Équipe de cuisine La Petite Vendée" class="about__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nous Trouver</h2>
+                    <p class="section__description">Facilement accessible au cœur de Petit-Lancy</p>
+                </div>
+
+                <div class="location__content">
+                    <div class="location__info">
+                        <div class="location__card">
+                            <h3>Adresse</h3>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Chem. de la Vendée 20<br>
+                                1213 Petit-Lancy<br>
+                                Suisse
+                            </p>
+                        </div>
+                        
+                        <div class="location__card">
+                            <h3>Transport</h3>
+                            <p>
+                                <i class="fas fa-bus"></i>
+                                Bus : Lignes 1, 9, 21 - Arrêt "Petit-Lancy Pont-Rouge"<br>
+                                <i class="fas fa-train"></i>
+                                Tram : Ligne 14 - Arrêt "Petit-Lancy-Pont-Rouge"
+                            </p>
+                        </div>
+                        
+                        <div class="location__card">
+                            <h3>Parking</h3>
+                            <p>
+                                <i class="fas fa-car"></i>
+                                Parking couvert payant disponible<br>
+                                Parking gratuit dans la rue<br>
+                                Stationnement facilité
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="location__map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.0334226739624!2d6.118833676313871!3d46.18989357109508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c7b30b2f54c3d%3A0x526cf26bf078baed!2sLa%20Petite%20Vend%C3%A9e!5e0!3m2!1sfr!2sch!4v1756106463381!5m2!1sfr!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localisation La Petite Vendée">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Contact</h2>
+                    <p class="section__description">Nous sommes à votre écoute pour toute demande</p>
+                </div>
+
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Téléphone</h3>
+                            <p>022 792 14 15</p>
+                            <small>Réservations et renseignements</small>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>contact@lapetitevendee.ch</p>
+                            <small>Demandes particulières</small>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Horaires</h3>
+                            <p>
+                                Lun-Sam: 11:30-14:00 & 18:30-23:00<br>
+                                Dim: 11:00-14:00 & 18:30-23:00
+                            </p>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" id="contact-form">
+                        <h3>Demande de Renseignements</h3>
+                        
+                        <div class="form__grid">
+                            <div class="form__group">
+                                <label for="contact-name">Nom</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choisir un sujet</option>
+                                <option value="reservation">Réservation</option>
+                                <option value="evenement">Événement privé</option>
+                                <option value="traiteur">Service traiteur</option>
+                                <option value="menu">Questions sur la carte</option>
+                                <option value="allergie">Allergies alimentaires</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Détaillez votre demande..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary">Envoyer le Message</button>
+                    </form>
+                </div>
+
+                <div class="newsletter">
+                    <div class="newsletter__content">
+                        <h3>Newsletter</h3>
+                        <p>Restez informé de nos événements spéciaux et nouveautés</p>
+                        <form class="newsletter__form" id="newsletter-form">
+                            <input type="email" placeholder="Votre adresse email" required>
+                            <button type="submit" class="btn btn--secondary">S'abonner</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>La Petite Vendée</h3>
+                    <p>Restaurant gastronomique français à Petit-Lancy depuis 1998. L'art de la cuisine française dans un cadre raffiné.</p>
+                    
+                    <div class="footer__social">
+                        <a href="#" class="social__link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social__link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social__link" aria-label="TripAdvisor">
+                            <i class="fab fa-tripadvisor"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h4>Contact</h4>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Chem. de la Vendée 20, 1213 Petit-Lancy
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        022 792 14 15
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        contact@lapetitevendee.ch
+                    </p>
+                </div>
+                
+                <div class="footer__section">
+                    <h4>Horaires</h4>
+                    <div class="footer__hours">
+                        <p>Lundi - Samedi<br><span>11:30-14:00 & 18:30-23:00</span></p>
+                        <p>Dimanche<br><span>11:00-14:00 & 18:30-23:00</span></p>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Menu Dégustation</li>
+                        <li>Terrasse & Toit-terrasse</li>
+                        <li>Parking Facile</li>
+                        <li>Événements Privés</li>
+                        <li>Service Traiteur</li>
+                        <li>Accessibilité Complète</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 La Petite Vendée. Tous droits réservés.</p>
+                <div class="footer__links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
